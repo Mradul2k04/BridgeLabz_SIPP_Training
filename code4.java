@@ -1,11 +1,12 @@
-class code4 {
+package level2;
+import java.util.Scanner;
+public class code4 {
     public static void main(String[] args) {
-        int costPrice = 129;
-        int sellingPrice = 191;
-        int profit = sellingPrice - costPrice;
-        float profitPercentage = (float)profit / costPrice * 100;
-
-        System.out.println("The Cost Price is INR " + costPrice + " and Selling Price is INR " + sellingPrice + "\n" +
-                           "The Profit is INR " + profit + " and the Profit Percentage is " + profitPercentage);
+        Scanner input = new Scanner(System.in); // Create a Scanner object to read input
+        System.out.print("Enter the distance in feet: ");
+        double distanceInFeet = input.nextDouble();
+        double yards = distanceInFeet / 3;
+        double miles = yards / 1760;
+        System.out.println("The distance in yards is " + yards + " while the distance in miles is " + miles);
     }
 }

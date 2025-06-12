@@ -1,10 +1,15 @@
-class code2 {
+package areatriangle;
+import java.util.Scanner;
+public class code2 {
     public static void main(String[] args) {
-        int maths = 94; // Initialize maths variable
-        int physics = 95; // Initialize physics variable
-        int chemistry = 96; // Initialize chemistry variable
-        int totalMarks = maths + physics + chemistry; // Calculate total marks
-        int Average = totalMarks / 3; // Calculate average marks
-        System.out.println("Sam's Average is: " + Average); // Output the Average marks
-    }
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter base of the triangle (in cm): ");
+        double baseCm = input.nextDouble();
+        System.out.print("Enter height of the triangle (in cm): ");
+        double heightCm = input.nextDouble();
+        double areaCm = 0.5 * baseCm * heightCm;
+        double areaInches = areaCm / (2.54 * 2.54);
+        System.out.println("The Area of the triangle in sq in is " + areaInches + " and sq cm is " + areaCm);
+        input.close();
+        }
 }
