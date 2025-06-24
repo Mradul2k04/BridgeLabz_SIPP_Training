@@ -1,4 +1,4 @@
-package controlFlows;
+package countFor;
 
 import java.util.Scanner;
 
