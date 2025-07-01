@@ -1,5 +1,3 @@
-package countFor;
-
 import java.util.Scanner;
 
 public class countFor {

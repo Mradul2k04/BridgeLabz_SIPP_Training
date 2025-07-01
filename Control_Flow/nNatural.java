@@ -1,5 +1,3 @@
-package controlFlows;
-
 import java.util.Scanner;
 
 public class nNatural {
